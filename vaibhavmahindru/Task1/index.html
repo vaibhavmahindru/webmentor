@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FORM</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: blanchedalmond;
+        padding: 0;
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      form {
+        border: 2px solid white;
+        padding: 2%;
+        background-color: rgb(173, 170, 166);
+        border-radius: 2rem;
+        box-shadow: 10px 10px 5px rgb(82, 75, 75);
+      }
+      label,
+      input,
+      select,
+      textarea,
+      p {
+        font-size: 1.5rem;
+      }
+      h1 {
+        margin-left: 30%;
+      }
+      button {
+        margin-left: 37%;
+        margin-top: 1rem;
+        font-size: 2rem;
+      }
+      input {
+        margin: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <form>
+        <h1>SURVEY FORM</h1>
+        <label for="fname">Firstname: </label>
+        <input type="text" id="fname" name="fname" required />
+        <br />
+        <label for="lname">Lastname: </label>
+        <input type="text" id="lname" name="lname" required />
+        <br />
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" name="pass" required />
+        <br />
+        <label for="re-pass">Retype-Password: </label>
+        <input type="password" id="re-pass" name="re-pass" required />
+        <br />
+        <label for="phone">Mobile no: </label>
+        <input type="tel" id="phone" name="phone" required />
+        <br />
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label>Gender:-<br /></label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <br />
+        <label for="Education level">EDUCATION LEVEL:- </label>
+        <select id="dropdown">
+          <option value="university">University</option>
+          <option value="highschool">High-School</option>
+          <option value="dropout">Dropout</option>
+        </select>
+        <br />
+        <label for="msg"></label>
+        <p>Any views regarding the current situation:-</p>
+        <textarea
+          id="msg"
+          name="user_message"
+          rows="4"
+          cols="50"
+          placeholder="Enter Text Here"
+        ></textarea>
+        <br />
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
